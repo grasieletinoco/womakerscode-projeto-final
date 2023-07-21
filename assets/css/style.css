@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; 
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4rem 0;
+  align-items: center;
+}
+
+
+/*----------INICIO HEADER----------*/
+header{
+  height: 300px;
+  background-color: #81b1a4;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23701d0b' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.navbar a img{
+height: 50px;
+}
+
+.header__menu{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.menu{
+  display: flex;
+  gap: 20px;
+}
+
+.menu li{
+  font-weight: 500;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #fdc568;
+}
+
+.menu li a:hover{
+  color: #701d0b;
+}
+
+.header__title{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header__title h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  color: #701d0b;
+}
+
+.header__title h3{
+  font-family: 'Tektur', cursive;
+  font-size: 1.5rem;
+  color: #423427;
+}
+/*----------FINAL HEADER----------*/
+
+
+
+/*----------INICIO INTRO ADA----------*/
+.main__intro{
+  background-color: #eae7e1;
+}
+
+.main__intro__descricao{
+  width: 580px;
+}
+
+.main__intro__descricao h2{
+  text-transform: uppercase;
+  color: #701d0b;
+  font-family: 'Tektur', cursive;
+}
+
+.main__intro__descricao p{
+  padding: 0.5rem;
+}
+
+.main__intro__imagem img{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px double #81b1a4;
+}
+/*----------FINAL INTRO ADA----------*/
+
+
+
+
+/*----------INICIO TAB BIOGRAFIA----------*/
+.main__bio h2{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  text-transform: uppercase;
+  color: #701d0b;
+  font-family: 'Tektur', cursive;
+}
+
+.tablink {
+  background-color: #3a5f55;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px inset;
+}
+
+.tablink:hover {
+  background-color: #4e7e71;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 450px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px inset;
+}
+
+.tabcontent h3{
+  color: #701d0b;
+  padding-bottom: 0.5rem;
+}
+
+.tabcontent P{
+  color: #000000;
+  padding-bottom: 0.5rem;
+}
+
+#historia {background-color: #d4d8d7;}
+#legado {background-color: #d4d8d7;}
+#primeiro__computador {background-color: #d4d8d7;}
+#importancia {background-color: #d4d8d7;}
+
+/*----------FINAL TAB BIOGRAFIA----------*/
+
+
+
+/*----------INICIO CURIOSIDADES----------*/
+.main__curiosidades{
+  background-color: #eae7e1;
+}
+
+.main__curiosidades h2{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  text-transform: uppercase;
+  color: #701d0b;
+  font-family: 'Tektur', cursive;
+}
+
+.main__curiosidades__imagem img{
+  border-radius: 20px 0;
+  border-top-left-radius: 250px;
+  border: 5px double #81b1a4;
+  width: 400px;
+}
+
+.main__curiosidades__card{
+  width: 649px;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+details div {
+	border-left: 2px solid #423427;
+	border-right: 2px solid #423427;
+	border-bottom: 2px solid #423427;
+	padding: 1.5em;
+  background-color: #f2f2f2;
+}
+
+details div > * + * {
+	margin-top: 1.5em;
+}
+
+details + details {
+	margin-top: .5rem;
+}
+
+summary {
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary {
+	border: 2px solid #423427;
+	padding: .75em 1em;
+	cursor: pointer;
+	position: relative;
+	padding-left: calc(1.75rem + .75rem + .75rem);
+  background-color: #f2f2f2;
+}
+
+summary:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "🡣";
+	width: 1.75rem;
+	height: 1.75rem;
+	background-color: #423427;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+details[open] summary {
+	background-color: #c4dbd5;
+}
+
+details[open] summary:before {
+	content: "🡡";
+}
+
+summary:hover {
+	background-color: #c4dbd5;
+  color: #701d0b;
+}
+
+/*----------FINAL CURIOSIDADES----------*/
+
+
+
+
+/*----------INICIO MULHERES NA TECNOLOGIA----------*/
+.main__mulhers__tecnologia{
+  color: #701d0b;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.main__mulhers__tecnologia h2{
+  width: 50%;
+  font-size: 2rem;
+  font-family: 'Tektur', cursive;
+}
+
+.main__mulhers__tecnologia__lista{
+  margin: 0 auto;
+}
+
+.main__mulhers__tecnologia__lista li{
+  list-style: none;
+  text-decoration: none;
+  padding: 0.3rem;
+  width: 500px;
+}
+
+.main__mulhers__tecnologia__lista li a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #181b1a;
+}
+
+.main__mulhers__tecnologia__lista li a:hover{
+  color: #701d0b;
+}
+
+.main__mulhers__tecnologia__lista li:hover{
+  color: #701d0b;
+  background-color: #d4d8d7;
+}
+
+/*----------FINAL MULHERES NA TECNOLOGIA----------*/
+
+
+
+/*----------INICIO FOOTER----------*/
+footer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  background-color: #181b1a;
+  color: #a0c5bb;
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+footer h3{
+  font-size: 0.9rem;
+}
+
+footer p{
+  font-size: 0.9rem;
+}
+
+
+.footer_info{
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer_info p{
+  text-transform: uppercase;
+}
+
+.footer_info ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer_info ul li {
+  text-align: center;
+  padding-left: 5px;
+  transition: all 0.2s;
+}
+
+.footer_info ul li:hover {
+  scale: 1.1;
+}
+/*----------FINAL FOOTER----------*/
